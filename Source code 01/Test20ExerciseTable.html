@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <title>CSS | fit-content Property</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1,
+                   shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous"> 
+</head>
+<style>
+    #container {
+        display: grid;
+        grid-template-columns: fit-content(150px)
+                               fit-content(250px)
+                               fit-content(350px) 1.5fr;
+        grid-gap: 5px;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        background-color: #563d7c;
+        padding: 8px;
+    }
+</style>
+ 
+<body>
+    <h1 style="color:green;">GeeksforGeeks</h1>
+    <div id="container">
+ 
+        <div style="background-color: whitesmoke;
+                    padding: 5px">
+          The smallest division of the grid.
+          Maximum width is clamped to 150px.
+        </div>
+        <div style="background-color: whitesmoke;
+                    padding: 5px">
+          This division's width will depend on
+          the content inside it. However, the
+          maximum width will be 250px.
+        </div>
+        <div style="background-color: whitesmoke;
+                    padding: 5px">
+            <strong>
+              Division with some more data, however,
+              the maximum permissible width will be 350px.
+            </strong>
+            <br>
+            <br>
+          Web design encompasses many different skills
+          and disciplines in the production and maintenance
+          of websites. The different areas of web design
+          include web graphic design; interface design;
+          authoring, including standardized code and
+          proprietary software; user experience design;
+          and search engine optimization.
+        </div>
+        <div style="background-color: whitesmoke;
+                    padding: 5px">
+          Flexible division, the width will change in
+          accordance with the screen size and the width
+          of the other three divisions.
+        </div>
+    </div>
+</body>
+</html>

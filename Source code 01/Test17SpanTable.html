@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Span Table</title>
+    <style type = "text/css">
+      .tbl_student{
+        background-color: white;
+      }
+      .tbl_student td{
+        border: 1px solid gray !important;
+      }
+      tbody{
+        text-align: center;   
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+    <h1> How to use span method operating on table</h1>
+    <div>
+    <table align="center" class="tbl_student" border="1" background="Images/afdaf.png" width="600" height="200">
+      <!-- <table border="1" cellspacing = "3" style="background-color:#9393c1;"> is the default syntax -->
+      <thead>
+        <tr>
+          <th>Month</th>
+          <th>Savings</th>
+          <th>Saving for holidays</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>January</td>
+          <td>100$</td>
+          <td rowspan = "2">10$</td>
+        </tr>
+        
+        <tr>
+          <td>Febraury</td>
+          <td>100$</td>
+        </tr>
+
+        <tr>
+          <td>March</td>
+          <td>100$</td>
+          <td rowspan="2">50$</td>
+        </tr>
+
+        <tr>
+          <td>April</td>
+          <td>100$</td>
+        </tr>
+
+      </tbody>
+    </table>
+    </div>
+    </div>
+  </body>
+</html>
